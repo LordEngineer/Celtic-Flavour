@@ -1,0 +1,6 @@
+﻿l_english:
+ cp_reconquer_hen_ogledd_decision:0 "Reconquer the Old North"
+ cp_reconquer_hen_ogledd_decision_desc:0 "The kingdoms of the Hen Ogledd fell to Anglo-Saxon and Pictish raiders history, long has the Brittonic people dreamed to reunite Yr Hen Ogledd."
+ cp_reconquer_hen_ogledd_decision_tooltip:0 "Hen Ogledd becomes a [de_jure|E] [kingdom|E]."
+ cp_reconquer_hen_ogledd_decision_effects_de_jure_tt:0 "If owned, the [duchies|E] of [hen_ogledd_lancaster.GetNameNoTier] and [hen_ogledd_york.GetNameNoTier] will each become [de_jure|E] Hen Ogledd."
+ cp_reconquer_hen_ogledd_decision_confirm:0 "Confirm"

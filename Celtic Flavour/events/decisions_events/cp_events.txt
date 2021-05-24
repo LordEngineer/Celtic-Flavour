@@ -1,0 +1,32 @@
+﻿namespace = cp_brittonic
+
+#############################################
+# #Unification/Reconquest of the Old North  #
+# by Castor (Charles)			    #
+#############################################
+
+#The kingdom revived.
+cp_brittonic.0001 = {
+	type = character_event
+	title = cp_brittonic.0001.t
+	desc = cp_brittonic.0001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:founder
+		animation = personality_honorable
+	}
+
+	immediate = { cp_reconquer_hen_ogledd_decision_scripted_effect = yes }
+
+	#Take the nickname.
+	option = {
+		name = cp_brittonic.0001.a
+		give_nickname = nick_the_old
+		add_prestige = minor_prestige_gain
+	}
+	#No thanks on the nickname, more prestige instead please.
+	option = {
+		name = cp_brittonic.0001.b
+		add_prestige = medium_prestige_gain
+	}
+}

@@ -1,0 +1,6 @@
+﻿world_europe_west_britannia_hen_ogledd = {
+	duchies = {
+		# Yr Hen Ogledd
+		d_northumberland d_galloway d_lothian
+	}
+}

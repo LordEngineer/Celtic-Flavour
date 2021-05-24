@@ -1,0 +1,118 @@
+﻿#############################################
+# #Unification/Reconquest of the Old North	#
+# by Castor (Charles)						#
+#############################################
+
+#Unify the duchies of Yr Hen Ogledd into a Kingdom. Pretty similar to the Restore Cornwall decision
+#Need to completely control the duchies of Strathclyde, Gododdin, and Northumbria.
+#Permanently available to Cumbrian characters, available conditionally to other Brythonic cultures.
+#Conditions are: None of the duchies exist, or all 3 controlled by non-Brythonic rulers.
+
+#Upon making the decision new Kingdom with CoA and Name depending on decision maker's religion and
+#which Brythonic culture. Dynamic?
+#Different names for Christian and Celtic Pagans? (Not sure about this one)
+
+cp_reconquer_hen_ogledd_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	major = yes
+
+	ai_check_interval = 120
+
+	desc = cp_reconquer_hen_ogledd_decision_desc
+	selection_tooltip = cp_reconquer_hen_ogledd_decision_tooltip
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		exists = dynasty
+		OR = {
+			OR = {
+				has_title = title:d_galloway
+				has_title = title:d_northumberland
+				has_title = title:d_lothian
+			}
+			dynasty = dynasty:1029002 # Ebrauc
+			culture = culture:cumbrian
+		}
+		# any_held_title = {
+		# 	tier = tier_county
+		# 	title_province = {
+		# 		geographical_region = world_europe_west_britannia_hen_ogledd
+		# 	}
+		# }
+		OR = { #Other Brythonic cultures
+			#dynasty = dynasty:1029002 # Ebrauc
+			culture_group = culture_group:brythonic_group
+		}
+		NOT = {	#You can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_hen_ogledd_unified
+			}
+		}
+		OR = {
+			has_government = feudal_government
+			has_government = republic_government
+			has_government = clan_government
+		}
+		highest_held_title_tier <= tier_duchy
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		prestige_level >= very_high_prestige_level
+		has_title = title:d_galloway
+		OR = {
+			has_title = title:d_galloway
+			has_title = title:d_northumberland
+			has_title = title:d_lothian
+		}
+		#completely_controls_region = world_europe_west_britannia_hen_ogledd
+		completely_controls = title:d_galloway
+		completely_controls = title:d_northumberland
+		completely_controls = title:d_lothian
+		any_realm_province = { #People must be at least partially Brythonic
+			culture_group = culture_group:brythonic_group
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+
+	effect = {
+		show_as_tooltip = {
+			cp_reconquer_hen_ogledd_decision_scripted_effect = yes
+		}
+		save_scope_as = founder
+		trigger_event = {
+			id = cp_brittonic.0001
+		}
+		#Notify other players.
+		every_player = {
+			limit = {
+				NOT = { this = root }
+				is_within_diplo_range = { CHARACTER = root }
+			}
+			trigger_event = cp_brittonic.0002
+		}
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_hen_ogledd_unified
+			}
+		}
+	}
+
+	cost = {
+		gold = 300
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
