@@ -1,5 +1,8 @@
 ﻿l_english:
 
  # Celtic Past title names
- k_hen_ogledd:0 "Yr Hen Ogledd"
- k_hen_ogledd_adj:0 "Hen Ogledd"
+ k_high_north:0 "High North"
+ k_high_north_adj:0 "Northern"
+ 
+ k_logres:0 "Logres"
+ k_logres_adj:0 "Logres"

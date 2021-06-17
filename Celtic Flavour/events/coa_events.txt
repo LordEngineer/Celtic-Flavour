@@ -84,28 +84,6 @@ coa.11 = {
 			coa_11_set_coa_suffix_effect = { TITLE = d_lancaster SUFFIX = welsh }
 		}
 
-		#####
-		
-		#Dynastic CoAs
-		else_if = {
-			limit = { coa_switch_to_dynasty_trigger = yes }
-			coa_11_set_coa_effect = { TITLE = k_wales }
-		}
-		#Religious CoAs
-		else_if = {
-			#limit = { NOT = { has_religion = religion:christianity_religion } }
-			limit = { coa_switch_to_pagan_trigger = yes }
-			coa_11_set_coa_suffix_effect = { TITLE = k_wales SUFFIX = pagan }
-		}
-		#Sloppy I know
-		else_if = {
-			#limit = { has_religion = religion:christianity_religion }
-			limit = { coa_switch_to_christian_trigger = yes }
-			coa_11_set_coa_suffix_effect = { TITLE = k_wales SUFFIX = christian }
-		}
-
-		#####
-
 		else_if = {
 			limit = { coa_switch_to_saxon_trigger = yes }
 			coa_11_set_coa_effect = { TITLE = c_hereford }
@@ -354,6 +332,26 @@ coa.11 = {
 			coa_11_set_coa_effect = { TITLE = c_inner_hebrides  }				
 			coa_11_set_coa_effect = { TITLE = c_dublin  }			
 			coa_11_set_coa_effect = { TITLE = c_argyll  }		
-		}		
+		}
+		
+		#####
+		
+		#Dynastic CoAs
+		if = {
+			limit = { coa_switch_to_dynasty_trigger = yes }
+			coa_11_set_coa_effect = { TITLE = k_wales }
+		}
+		#Religious CoAs
+		else_if = {
+			limit = { coa_switch_to_pagan_trigger = yes }
+			coa_11_set_coa_suffix_effect = { TITLE = k_wales SUFFIX = pagan }
+		}
+		#Sloppy I know
+		else_if = {
+			limit = { coa_switch_to_christian_trigger = yes }
+			coa_11_set_coa_suffix_effect = { TITLE = k_wales SUFFIX = christian }
+		}
+
+		#####
 	}
 }

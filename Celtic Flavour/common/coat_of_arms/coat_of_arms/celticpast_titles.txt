@@ -27,3 +27,24 @@ d_lancaster_welsh = {
 		instance = { position = { 0.50 0.83 } scale = { 0.45 0.45 }  }
 	}
 }
+
+k_logres = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_wyvern.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+	}
+}
+
+k_high_north = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "black"
+	colored_emblem = {
+		texture = "ce_falcon.dds"
+		color1 = "black"
+		color2 = "black"
+	}
+}

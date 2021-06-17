@@ -1,6 +1,6 @@
 ﻿# ARTISTIC LEGACIES
 
-cp_artistic_legacy_1 = { # Wanderlust
+cp_artistic_legacy_1 = { # Poetry
 	legacy = cp_artistic_legacy_track
 
 	#can_be_picked = { eligible_for_fp1_dynasty_legacies_trigger = yes }
@@ -35,7 +35,7 @@ cp_artistic_legacy_1 = { # Wanderlust
 	}
 }
 
-cp_artistic_legacy_2 = { # Gift-Givers
+cp_artistic_legacy_2 = { # The Gift of Music
 	legacy = cp_artistic_legacy_track
 
 	effect = {
@@ -43,7 +43,7 @@ cp_artistic_legacy_2 = { # Gift-Givers
 	}
 }
 
-cp_artistic_legacy_3 = { # Strange Gods
+cp_artistic_legacy_3 = { # Stories for the Ages
 	legacy = cp_artistic_legacy_track
 
 	character_modifier = {
@@ -58,7 +58,7 @@ cp_artistic_legacy_3 = { # Strange Gods
 	}
 }
 
-cp_artistic_legacy_4 = { # Veteran Explorers
+cp_artistic_legacy_4 = { # Virtuoso
 	legacy = cp_artistic_legacy_track
 
 	character_modifier = {
@@ -68,7 +68,7 @@ cp_artistic_legacy_4 = { # Veteran Explorers
 	}
 }
 
-cp_artistic_legacy_5 = { # Decentralized Rule
+cp_artistic_legacy_5 = { # Tales to Inspire
 	legacy = cp_artistic_legacy_track
 
 	effect = {
@@ -104,7 +104,7 @@ cp_artistic_legacy_5 = { # Decentralized Rule
 
 # HEROISM LEGACIES
 
-cp_heroism_legacy_1 = { # Sea-Wolves
+cp_heroism_legacy_1 = { # Chivalry
 	legacy = cp_heroism_legacy_track
 
 	#can_be_picked = { eligible_for_fp1_dynasty_legacies_trigger = yes }
@@ -137,7 +137,7 @@ cp_heroism_legacy_1 = { # Sea-Wolves
 	}
 }
 
-cp_heroism_legacy_2 = { # Always Space in the Hold
+cp_heroism_legacy_2 = { # Valour
 	legacy = cp_heroism_legacy_track
 
 	character_modifier = {
@@ -147,7 +147,7 @@ cp_heroism_legacy_2 = { # Always Space in the Hold
 	}
 }
 
-cp_heroism_legacy_3 = { # Practiced Kidnappers
+cp_heroism_legacy_3 = { # Honour
 	legacy = cp_heroism_legacy_track
 
 	effect = {
@@ -156,10 +156,8 @@ cp_heroism_legacy_3 = { # Practiced Kidnappers
 	}
 }
 
-cp_heroism_legacy_4 = { # Making a Killing
+cp_heroism_legacy_4 = { # Galantry
 	legacy = cp_heroism_legacy_track
-
-	# Ewww, pun title. I feel deep shame :(.
 
 	effect = {
 		custom_description_no_bullet = { text = fp1_pillage_legacy_4_effect }
@@ -170,7 +168,7 @@ cp_heroism_legacy_4 = { # Making a Killing
 	}
 }
 
-cp_heroism_legacy_5 = { # No Quarter
+cp_heroism_legacy_5 = { # Arthurian
 	legacy = cp_heroism_legacy_track
 
 	effect = {
